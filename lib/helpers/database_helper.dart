@@ -26,7 +26,7 @@ class DatabaseHelper {
     const idType = 'INTEGER PRIMARY KEY AUTOINCREMENT';
     const textType = 'TEXT';
     const blobType = 'BLOB';
-    await db.execute(''' 
+    await db.execute('''
     CREATE TABLE images ( 
       id $idType, 
       image $blobType, 
@@ -47,18 +47,23 @@ class DatabaseHelper {
 
   // DatabaseHelper.dart
 
-Future<int> deleteImage(int id) async {
-  final db = await instance.database;
-  return await db.delete(
-    'images',
-    where: 'id = ?',
-    whereArgs: [id],
-  );
-}
+  Future<int> deleteImage(int id) async {
+    final db = await instance.database;
+    return await db.delete(
+      'images',
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
 
-
+  // Fungsi untuk mengambil semua gambar dan mengurutkan berdasarkan tanggal terbaru
   Future<List<Map<String, dynamic>>> getAllImages() async {
     final db = await instance.database;
-    return await db.query('images');
+    // Menambahkan ORDER BY untuk mengurutkan berdasarkan kolom date secara menurun
+    return await db.query(
+      'images',
+      orderBy:
+          'date DESC', // Mengurutkan berdasarkan kolom 'date' secara menurun
+    );
   }
 }
