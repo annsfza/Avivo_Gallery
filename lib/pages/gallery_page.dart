@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:frd_gallery/pages/login_page.dart';
+import 'package:Avivo_Gallery/pages/login_page.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:sqflite/sqflite.dart';
 import '../helpers/database_helper.dart';

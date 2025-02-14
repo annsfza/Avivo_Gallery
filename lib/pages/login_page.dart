@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frd_gallery/pages/gallery_page.dart';
+import 'package:Avivo_Gallery/pages/gallery_page.dart';
 
 class LoginPage extends StatefulWidget {
   final bool showLogoutMessage;

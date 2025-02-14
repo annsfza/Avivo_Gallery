@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frd_gallery/pages/login_page.dart';
+import 'package:Avivo_Gallery/pages/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);

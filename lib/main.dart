@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frd_gallery/pages/splash_screen.dart';
+import 'package:Avivo_Gallery/pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
