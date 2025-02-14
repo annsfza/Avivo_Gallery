@@ -55,7 +55,7 @@ class SplashScreen extends StatelessWidget {
                         TextSpan(
                           text: 'Photo',
                           style: TextStyle(
-                            color: Colors.pink,
+                            color: Colors.blueAccent,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -97,7 +97,7 @@ class SplashScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black87,
+                          color: Colors.blueAccent,
                         ),
                       ),
                     ),
