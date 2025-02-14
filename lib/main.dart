@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Gallery App',
       theme: ThemeData(
+        fontFamily: 'PlayfairDisplay',
         primarySwatch: Colors.blue,
       ),
       home: const SplashScreen(),

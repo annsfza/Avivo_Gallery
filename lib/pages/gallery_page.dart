@@ -8,7 +8,7 @@ import '../helpers/database_helper.dart';
 
 // First, add this new ImageViewerPage class
 class ImageViewerPage extends StatelessWidget {
-  final Uint8List imageBytes;
+  final Uint8List imageBytes; 
 
   const ImageViewerPage({
     Key? key,
